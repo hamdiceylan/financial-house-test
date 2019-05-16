@@ -42,15 +42,17 @@
   "devDependencies": {
     "enzyme": "^3.9.0",
     "fetch-mock": "^7.3.3",
+    "jest": "24.7.1",
     "redux-mock-store": "^1.5.3"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.js",
+      "src/**/*.{js,jsx}",
       "!src/index.js",
       "!src/tempPolyfills.js",
       "!src/setupTests.js",
-      "!src/serviceWorker.js"
+      "!src/serviceWorker.js",
+      "!src/app/store/configureStore.js"
     ]
   }
 }

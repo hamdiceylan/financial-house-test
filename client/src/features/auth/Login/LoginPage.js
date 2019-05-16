@@ -20,7 +20,10 @@ export class LoginPage extends Component {
             <Header as='h2' color='red' textAlign='center'>
             <Image style={{height:'80px', width: '250px'}} src='assets/financial-house-logo.png' />
             </Header>
-            <Form error size="large" onSubmit={handleSubmit((creds) => login(creds,history))}>
+            <Form error 
+              size="large" 
+              onSubmit={handleSubmit((creds) => login(creds,history))} 
+              className='login-form'>
               <Segment>
                 <h2>Login to your account</h2>
                 <Field

@@ -5,7 +5,6 @@ export const login = (creds,history) => {
     return async (dispatch, getState) => {
       try {
         dispatch(asyncActionStart())
-        debugger;
         const response = await fetch('/api/v3/merchant/user/login', {
           method: 'POST',
           headers: {
@@ -20,7 +19,6 @@ export const login = (creds,history) => {
         dispatch(asyncActionFinish())
       } catch(error){
         dispatch(asyncActionError())
-        console.log(error);
       }
     }
 };

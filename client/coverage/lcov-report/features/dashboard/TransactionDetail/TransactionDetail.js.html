@@ -111,33 +111,11 @@
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a>
-<a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a>
-<a name='L76'></a><a href='#L76'>76</a>
-<a name='L77'></a><a href='#L77'>77</a>
-<a name='L78'></a><a href='#L78'>78</a>
-<a name='L79'></a><a href='#L79'>79</a>
-<a name='L80'></a><a href='#L80'>80</a>
-<a name='L81'></a><a href='#L81'>81</a>
-<a name='L82'></a><a href='#L82'>82</a>
-<a name='L83'></a><a href='#L83'>83</a>
-<a name='L84'></a><a href='#L84'>84</a>
-<a name='L85'></a><a href='#L85'>85</a>
-<a name='L86'></a><a href='#L86'>86</a>
-<a name='L87'></a><a href='#L87'>87</a>
-<a name='L88'></a><a href='#L88'>88</a>
-<a name='L89'></a><a href='#L89'>89</a>
-<a name='L90'></a><a href='#L90'>90</a>
-<a name='L91'></a><a href='#L91'>91</a>
-<a name='L92'></a><a href='#L92'>92</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -172,36 +150,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -229,11 +177,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, {Component} from 'react';
-import { Grid, Header, Item, Segment, Icon } from "semantic-ui-react";
+import { Grid, Segment } from "semantic-ui-react";
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { getTransactionDetail } from '../dashboardActions'
 import LoadingComponent from '../../../app/layout/LoadingComponent';
+import PageHeader from '../../../app/layout/PageHeader';
+import FxDetails from '../FxDetails/FxDetails';
+import TransactionCard from '../TransactionCard/TransactionCard';
+import CustomerInfo from '../CustomerInfo/CustomerInfo';
 &nbsp;
 const actions = {
   getTransactionDetail
@@ -266,54 +218,24 @@ export class TransactionDetail extends Component {
       &lt;React.Fragment&gt;
         {loading &amp;&amp; &lt;LoadingComponent inverted={true} /&gt;}
         &lt;Grid centered&gt;
-        &lt;Grid.Column width={14}&gt;
-            &lt;Header as='h2'&gt;
-              &lt;Icon name='list' /&gt;
-              &lt;Header.Content&gt;
-                Transaction Details
-                &lt;Header.Subheader&gt;You can see transaction details here.&lt;/Header.Subheader&gt;
-              &lt;/Header.Content&gt;
-            &lt;/Header&gt;
-            &lt;Segment&gt;
-                &lt;Item.Group&gt;
-                  {transaction.customerInfo &amp;&amp; 
-                    &lt;Item&gt;
-                        &lt;Item.Content verticalAlign='bottom'&gt;
-                            &lt;Header as='h1'&gt;{transaction.customerInfo.billingFirstName} {transaction.customerInfo.billingLastName}&lt;/Header&gt;
-                            &lt;br/&gt;
-                            &lt;Header as='h3'&gt;{transaction.customerInfo.email}&lt;/Header&gt;
-                            &lt;br/&gt;
-                            &lt;Header as='h3'&gt;{transaction.customerInfo.billingState}&lt;/Header&gt;
-                        &lt;/Item.Content&gt;
-                    &lt;/Item&gt;}
-                &lt;/Item.Group&gt;
-            &lt;/Segment&gt;
-        &lt;/Grid.Column&gt;
-        &lt;Grid.Column width={14}&gt;
-              &lt;Segment&gt;
-                  &lt;Grid columns={2}&gt;
-                      {transaction.transaction &amp;&amp;
-                      &lt;Grid.Column width={8}&gt;
-                          &lt;Header icon='list' content='Transaction Details'/&gt;
-                          &lt;p&gt;Transaction Id: &lt;strong&gt;{transaction.transaction.merchant.transactionId}&lt;/strong&gt;&lt;/p&gt;
-                          &lt;p&gt;Fx TransactionId: &lt;strong&gt;{transaction.transaction.merchant.fxTransactionId}&lt;/strong&gt;&lt;/p&gt;
-                          &lt;p&gt;ReferenceNo: &lt;strong&gt;{transaction.transaction.merchant.referenceNo}&lt;/strong&gt;&lt;/p&gt;
-                          &lt;p&gt;Operation: &lt;strong&gt;{transaction.transaction.merchant.operation}&lt;/strong&gt;&lt;/p&gt;
-                          &lt;p&gt;Status: &lt;strong&gt;{transaction.transaction.merchant.status}&lt;/strong&gt;&lt;/p&gt;
-                          &lt;p&gt;Type: &lt;strong&gt;{transaction.transaction.merchant.type}&lt;/strong&gt;&lt;/p&gt;
-                      &lt;/Grid.Column&gt;}
-                      {transaction.fx &amp;&amp;
-                      &lt;Grid.Column width={8}&gt;
-                          &lt;Header content='Fx Details'/&gt;
-                          &lt;p&gt;Original Amount: &lt;strong&gt;{transaction.fx.merchant.originalAmount}&lt;/strong&gt;&lt;/p&gt;
-                          &lt;p&gt;Original Currency: &lt;strong&gt;{transaction.fx.merchant.originalCurrency}&lt;/strong&gt;&lt;/p&gt;
-                      &lt;/Grid.Column&gt;}
-                  &lt;/Grid&gt;
-              &lt;/Segment&gt;
+          &lt;Grid.Column width={14}&gt;
+            &lt;PageHeader 
+              icon='list'
+              headerMessage='Transaction Details'
+              SubheaderMessage='You can see transaction details here.' 
+            /&gt;
+            {transaction.customerInfo &amp;&amp; &lt;CustomerInfo customerInfo={transaction.customerInfo} /&gt; }
           &lt;/Grid.Column&gt;
-      &lt;/Grid&gt;
+          &lt;Grid.Column width={14}&gt;
+            &lt;Segment&gt;
+              &lt;Grid&gt;
+                  { transaction.transaction &amp;&amp; &lt;TransactionCard transaction={transaction.transaction.merchant} /&gt; }
+                  { transaction.fx &amp;&amp; &lt;FxDetails merchant={transaction.fx.merchant} /&gt; }
+              &lt;/Grid&gt;
+            &lt;/Segment&gt;
+          &lt;/Grid.Column&gt;
+        &lt;/Grid&gt;
       &lt;/React.Fragment&gt;
-&nbsp;
     )
   }
 }
@@ -325,7 +247,7 @@ export default withRouter(connect(mapState,actions)(TransactionDetail));
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu May 16 2019 14:11:03 GMT+0100 (BST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu May 16 2019 22:12:39 GMT+0100 (BST)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

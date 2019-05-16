@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1558012263507" clover="3.2.0">
-  <project timestamp="1558012263507" name="All files">
-    <metrics statements="128" coveredstatements="88" conditionals="28" coveredconditionals="7" methods="45" coveredmethods="25" elements="201" coveredelements="120" complexity="0" loc="128" ncloc="128" packages="14" files="21" classes="21"/>
+<coverage generated="1558041159203" clover="3.2.0">
+  <project timestamp="1558041159203" name="All files">
+    <metrics statements="126" coveredstatements="99" conditionals="26" coveredconditionals="7" methods="49" coveredmethods="31" elements="201" coveredelements="137" complexity="0" loc="126" ncloc="126" packages="18" files="26" classes="26"/>
     <package name="app.common.form.TextInput">
       <metrics statements="2" coveredstatements="1" conditionals="5" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="TextInput.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/app/common/form/TextInput/TextInput.js">
@@ -21,15 +21,20 @@
       </file>
     </package>
     <package name="app.layout">
-      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="App.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/app/layout/App.js">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
       </file>
       <file name="LoadingComponent.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/app/layout/LoadingComponent.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="4" count="6" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="PageHeader.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/app/layout/PageHeader.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="5" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
       </file>
     </package>
@@ -40,32 +45,14 @@
         <line num="7" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="app.store">
-      <metrics statements="12" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="configureStore.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/app/store/configureStore.js">
-        <metrics statements="12" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-      </file>
-    </package>
     <package name="features.async">
       <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
       <file name="asyncActions.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/async/asyncActions.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="3" count="9" type="stmt"/>
-        <line num="4" count="5" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
         <line num="9" count="9" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
         <line num="15" count="9" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
       </file>
@@ -87,21 +74,20 @@
       </file>
     </package>
     <package name="features.auth">
-      <metrics statements="16" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="authActions.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/auth/authActions.js">
-        <metrics statements="12" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
       </file>
       <file name="authConstants.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/auth/authConstants.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -121,7 +107,7 @@
         <line num="9" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
       </file>
     </package>
     <package name="features.dashboard">
@@ -177,17 +163,33 @@
       </file>
     </package>
     <package name="features.dashboard.ClientDetail">
-      <metrics statements="8" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <metrics statements="8" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="ClientDetail.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/dashboard/ClientDetail/ClientDetail.js">
-        <metrics statements="8" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="9" count="3" type="stmt"/>
+        <metrics statements="8" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="13" count="3" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="features.dashboard.CreditCard">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="CreditCard.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/dashboard/CreditCard/CreditCard.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="features.dashboard.CustomerInfo">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="CustomerInfo.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/dashboard/CustomerInfo/CustomerInfo.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
       </file>
     </package>
     <package name="features.dashboard.DashboardHome">
@@ -207,18 +209,41 @@
         <line num="6" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="features.dashboard.FxDetails">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="FxDetails.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/dashboard/FxDetails/FxDetails.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="features.dashboard.ShippingDetail">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ShippingDetail.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/dashboard/ShippingDetail/ShippingDetail.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="features.dashboard.TransactionCard">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="TransactionCard.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/dashboard/TransactionCard/TransactionCard.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="features.dashboard.TransactionDetail">
       <metrics statements="8" coveredstatements="2" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="TransactionDetail.js" path="/Users/hamdiceylan/Projects/financial-house-test/client/src/features/dashboard/TransactionDetail/TransactionDetail.js">
         <metrics statements="8" coveredstatements="2" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="8" count="3" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
       </file>
     </package>
     <package name="features.dashboard.TransactionList">

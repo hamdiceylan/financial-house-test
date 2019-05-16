@@ -7,8 +7,12 @@ describe('LoginPage', () =>{
     const handleSubmit = jest.fn();
     const login = jest.fn();
     
-    const props = { login: login, handleSubmit: handleSubmit, error: '', history: '' };
-
+    const props = { 
+        login, 
+        handleSubmit, 
+        error: '', 
+        history: '' 
+    };
 
     const loginPage = shallow(<LoginPage {...props} />);
 
@@ -20,6 +24,5 @@ describe('LoginPage', () =>{
         loginPage.find('.btn-login').simulate('click');
         expect(handleSubmit).toHaveBeenCalled();
     });
-
 })
 
