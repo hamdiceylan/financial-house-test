@@ -45,11 +45,9 @@ if (!isDev && cluster.isMaster) {
           'Authorization': req.headers['authorization']
         }
     }
-    // console.log(options);
   
     request.post(options, function (error, response, body) {
       let statusCode = response && response.statusCode; 
-      console.log('status code', statusCode);
       if(statusCode)
         res.status(statusCode).json(JSON.parse(body));
       else 
