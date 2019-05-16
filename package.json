@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "node server",
-    "build": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "build": "cd client/ && npm install && npm test && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "cacheDirectories": [
     "node_modules",
