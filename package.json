@@ -1,54 +1,27 @@
 {
-  "name": "financial-house-test",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "enzyme-adapter-react-16": "^1.13.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.0.3",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
-    "redux": "^4.0.1",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-form": "^8.2.0",
-    "redux-thunk": "^2.3.0",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.87.1"
+  "name": "financial-house-code-test-node-server",
+  "version": "1.0.0",
+  "description": "Basic node server for financial house react project",
+  "engines": {
+    "node": "10.x"
   },
-  "proxy": "https://sandbox-reporting.rpdpymnt.com/",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server",
+    "build": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamdiceylan/financial-house-test.git"
   },
-  "devDependencies": {
-    "enzyme": "^3.9.0",
-    "fetch-mock": "^7.3.3",
-    "redux-mock-store": "^1.5.3"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/index.js",
-      "!src/tempPolyfills.js",
-      "!src/setupTests.js"
-    ]
-  }
+  "license": "MIT",
+  "devDependencies": {}
 }
