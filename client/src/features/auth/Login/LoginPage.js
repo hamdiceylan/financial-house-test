@@ -22,7 +22,7 @@ export class LoginPage extends Component {
             </Header>
             <Form error size="large" onSubmit={handleSubmit((creds) => login(creds,history))}>
               <Segment>
-                <h2>Log-in to your account</h2>
+                <h2>Login to your account</h2>
                 <Field
                   name="email"
                   component={TextInput}
