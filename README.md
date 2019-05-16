@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hamdiceylan/financial-house-test.svg?branch=master)](https://travis-ci.org/hamdiceylan/financial-house-test)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
