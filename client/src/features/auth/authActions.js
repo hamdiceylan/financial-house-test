@@ -5,9 +5,6 @@ export const login = (creds,history) => {
     return async (dispatch, getState) => {
       try {
         dispatch(asyncActionStart())
-        console.log(creds.email)
-        console.log({"email":creds.email,"password":creds.password});
-        console.log(JSON.stringify({"email":creds.email,"password":creds.password}))
         debugger;
         const response = await fetch('/api/v3/merchant/user/login', {
           method: 'POST',
